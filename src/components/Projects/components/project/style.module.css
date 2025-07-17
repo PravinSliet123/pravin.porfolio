@@ -1,0 +1,63 @@
+.project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    border-top: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+    transition: all 0.2s;
+    pointer-events: all;
+    box-sizing: border-box;
+  }
+
+  
+  .project h2 {
+    font-size: 24px;
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    line-height: 130%;
+    transition: all 0.4s;
+  }
+  
+  .project p {
+    transition: all 0.4s;
+    font-size: 18px;
+    margin: 0px;
+    font-weight: normal;
+    letter-spacing: 1.15px;
+    line-height: 130%;
+    text-align: end;
+  }
+  
+  .project:last-of-type {
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
+  
+  .project:hover {
+    opacity: 0.5;
+  }
+  
+  .project:hover h2 {
+    transform: translateX(-10px);
+  }
+  
+  .project:hover p {
+    transform: translateX(10px);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .project {
+      padding: 30px;
+    }
+  
+    .project h2 {
+      font-size: var(18px) !important;
+    }
+  
+    .project p {
+      font-size: 12px !important;
+    }
+  }
+  

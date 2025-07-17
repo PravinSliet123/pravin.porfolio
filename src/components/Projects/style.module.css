@@ -1,0 +1,115 @@
+.projects {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    transition: all .5s ease-in-out;
+  }
+  .defaultColor{
+    background: linear-gradient(120deg, #f7b733 0%, #fc4a1a 100%);
+  }
+  .projects .body {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .projects .modalContainer {
+    height: 350px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  .projects .modalSlider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .projects .modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 333;
+  }
+  
+  .projects .modal img {
+    height: 300px;
+    border-radius: 20px;
+    height: auto;
+  }
+  
+  .projects .cursor,
+  .projects .cursorLabel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #455CE9;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:16px;
+    font-weight: var(--pbw);
+    letter-spacing: var(--ls);
+    line-height: var(--lh);
+    pointer-events: none;
+  }
+  
+  .projects .cursor a,
+  .projects .cursorLabel a {
+    pointer-events: fill !important;
+    /* z-index: -1 !important; */
+  }
+  
+  .morework {
+    font-size: var(--pb);
+    margin: 0px;
+    font-weight: var(--pbw);
+    letter-spacing: var(--ls);
+    line-height: var(--lh);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .projects {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      padding-top: 0px !important;
+    }
+  
+    .modalContainer {
+      height: 250px !important;
+      width: 250px !important;
+    }
+  
+    .modal img {
+      width: 80% !important;
+      height: 80% !important;
+      pointer-events: all !important;
+    }
+  
+    .body {
+      margin-bottom: 30px !important;
+      overflow: hidden !important;
+    }
+  }
+  
