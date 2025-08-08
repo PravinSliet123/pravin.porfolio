@@ -51,6 +51,22 @@ const projects = [
     subTitle: "Website & Concept",
     url: "https://sharvil-jp.com/",
 
+  },
+  {
+    title: "Makdfs",
+    src: "makdfs.png",
+    color: "#8fd0ca",
+    subTitle: "Website & Creative",
+    url: "https://makdfs.com/",
+
+  },
+  {
+    title: "V-Interview",
+    src: "interview.png",
+    color: "rgba(40, 99, 177,0.75)",
+    subTitle: "Software Development",
+    url: "https://virtual-interview-amber.vercel.app",
+
   }
 ]
 
@@ -130,7 +146,11 @@ export default function Home() {
           <Link href={'https://www.canva.com/design/DAFiTsBqbJ4/ObTRtfVcovm9IUHIhmo8HQ/view?utm_content=DAFiTsBqbJ4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#2'} target='_blank' className={styles.morework}>More work</Link>
         </Rounded> */}
         <>
-          <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
+          <motion.div ref={modalContainer} style={{
+            border:"2px solid #ccc",
+            borderRadius: "10px",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+          }} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={`${styles.modalContainer}`}>
             <div style={{ top: index * -100 + "%" }} className={styles.modalSlider} onClick={(e) => {
 
             }}>
