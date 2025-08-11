@@ -65,7 +65,7 @@ const projects = [
     src: "interview.png",
     color: "rgba(40, 99, 177,0.75)",
     subTitle: "Software Development",
-    url: "https://virtual-interview-amber.vercel.app",
+    url: "https://virtual-interview-lemon.vercel.app/dashboard",
 
   }
 ]
